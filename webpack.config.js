@@ -5,6 +5,7 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var OpenBrowserPlugin = require('open-browser-webpack-plugin');
 const port = 8088;
 module.exports = {
+  
   /*
      enter:入口文件的配置;
     */

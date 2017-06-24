@@ -32,11 +32,6 @@ import '../static/style/common.less'
     if(cityName==null){
       cityName='北京';
     }
-    console.log(cityName)
-      // 将城市信息存入redux
-    // this.setState({
-    //   initDone:true
-    // })
     this.props.userInfoActions.update({
       cityName:cityName
     })

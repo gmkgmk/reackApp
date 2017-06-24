@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import PureRenderMixin from 'react-addons-pure-render-mixin';
-import { bindActionCreators } from 'redux'
-import { connect } from 'react-redux'
-import Header from '../../components/Header'
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
+import Header from '../../components/Header';
+import Categore from '../../components/Categore';
+
+
 class Home extends Component{
   constructor(props,context){
     super(props,context);
@@ -11,26 +14,24 @@ class Home extends Component{
   render(){
     return(
      <main>
-        <Header/>
-        <h1>主页页面</h1>
+        <Header cityName={this.props.userinfo.cityName}/>
+        <Categore/>
      </main>
     )
   }
 }
 
-// -------------------redux react 绑定--------------------
 
-function mapStateToProps(state) {
-    return {
-        userinfo: state.userinfo
-    }
+function mapStateToProps(state){
+  return {
+      userinfo:state.userinfo
+  }
+}
+function mapDispatchToProps(dispatch){
+   return {}
 }
 
-function mapDispatchToProps(dispatch) {
-    return {
-    }
-}
 export default connect(
-    mapStateToProps,
-    mapDispatchToProps
-)(Home)
+  mapStateToProps,
+  mapDispatchToProps
+)(Home);
