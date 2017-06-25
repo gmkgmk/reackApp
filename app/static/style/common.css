@@ -5,6 +5,14 @@ ul {
   margin: 0;
   padding: 0;
 }
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 .floatLeft {
   float: left;
 }
@@ -15,4 +23,9 @@ ul {
   display: table;
   content: '';
   clear: both;
+}
+.home-list-title {
+  font-size: 16px;
+  color: #666;
+  margin: 10px 15px;
 }

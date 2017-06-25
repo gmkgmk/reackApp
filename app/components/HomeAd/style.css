@@ -1,0 +1,16 @@
+#home-ad {
+  background-color: #fff;
+  margin-top: 15px;
+}
+#home-ad .ad-container {
+  width: 100%;
+  padding: 10px 15px;
+}
+#home-ad .ad-item {
+  width: 33.3%;
+  height: 250px;
+}
+#home-ad .ad-item img {
+  width: 100%;
+  height: 100%;
+}

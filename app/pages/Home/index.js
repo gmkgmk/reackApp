@@ -4,6 +4,8 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import Header from '../../components/Header';
 import Categore from '../../components/Categore';
+import AD from './subpage/Ad';
+import List from './subpage/List';
 
 
 class Home extends Component{
@@ -16,6 +18,8 @@ class Home extends Component{
      <main>
         <Header cityName={this.props.userinfo.cityName}/>
         <Categore/>
+        <AD/>
+        <List cityName={this.props.userinfo.cityName}/>
      </main>
     )
   }

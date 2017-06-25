@@ -22,7 +22,7 @@ class Categore extends Component{
       <section id="home-category">
          <ReactSwipe swipeOptions={opt}>
                 <div className="carousel-item">
-                   <ul className="clearFix">
+                   <ul className="clearfix">
                       <li className="floatLeft jingdian">景点</li>
                       <li className="floatLeft ktv">KTV</li>
                       <li className="floatLeft gouwu">购物</li>
@@ -36,7 +36,7 @@ class Categore extends Component{
                   </ul>
                 </div>
                 <div className="carousel-item">
-                   <ul className="clearFix">
+                   <ul className="clearfix">
                         <li className="floatLeft meishi">美食</li>
                         <li className="floatLeft dianying">电影</li>
                         <li className="floatLeft jiudian">酒店</li>
@@ -50,7 +50,7 @@ class Categore extends Component{
                     </ul>
                 </div>
                 <div className="carousel-item">
-                  <ul className="clear-fix">
+                  <ul className="clearfix">
                       <li className="floatLeft ribencai">日本菜</li>
                       <li className="floatLeft SPA">SPA</li>
                       <li className="floatLeft jiehun">结婚</li>

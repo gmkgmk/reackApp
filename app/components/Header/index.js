@@ -12,6 +12,7 @@ class Header extends Component{
     return(
      <header className={`clearfix`} id={`${pageName}_header`}>
        <div className={`floatLeft ${pageName}_header_left`}>
+          &nbsp;
           <span>{this.props.cityName}</span>
           &nbsp;
           <i className="icon-angle-down"></i>
