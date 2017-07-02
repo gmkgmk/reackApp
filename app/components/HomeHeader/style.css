@@ -1,0 +1,33 @@
+#Home_header {
+  background-color: #e9203d;
+  padding: 10px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1;
+}
+#Home_header .Home_header_left {
+  width: 60px;
+  text-align: left;
+  margin: 5px 0;
+}
+#Home_header .Home_header_left a {
+  color: #fff;
+}
+#Home_header .Home_header_middle {
+  width: auto;
+  margin: 0 30px 0 60px;
+}
+#Home_header .search_container {
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 5px ;
+}
+#Home_header .search_container i {
+  color: #ccc !important;
+}
+#Home_header .Home_header_right {
+  width: 30px;
+  margin: 8px 0 5px;
+  text-align: center;
+}

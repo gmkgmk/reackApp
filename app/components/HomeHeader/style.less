@@ -1,0 +1,38 @@
+@pageName:Home;
+@header-left:60px;
+@header-right:30px;
+#@{pageName}_header{
+    background-color: rgb(233, 32, 61);
+    padding: 10px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1;
+  .@{pageName}_header_left {
+        width: @header-left;
+        text-align: left;
+        margin: 5px 0;
+        a{
+            color: #fff;
+        }
+    }
+    .@{pageName}_header_middle { 
+        width: auto;
+        margin: 0 @header-right 0 @header-left;
+    }
+    .search_container {
+          background-color: #fff;
+          border-radius: 15px;
+          overflow: hidden;
+          padding:5px ;
+
+          i {
+              color: #ccc !important;
+          }
+        
+      }
+    .@{pageName}_header_right {
+        width: @header-right;
+        margin: 8px 0 5px;
+        text-align: center;
+    }
+}

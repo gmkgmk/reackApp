@@ -4,7 +4,7 @@ import PureRenderMixin from 'react-addons-pure-render-mixin';
 class NotFound extends Component{
   constructor(props,context){
     super(props,context);
-    this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate;
+    this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this);
   }
   render(){
     return(

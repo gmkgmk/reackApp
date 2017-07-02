@@ -28,10 +28,13 @@ import '../static/style/common.less'
   }
   componentDidMount(){
     // 从localstoring里面获取城市
-    let cityName =LocalStore.setItem(CITYNAME);
-    if(cityName==null){
+    let cityName =LocalStore.getItem(CITYNAME);
+
+    //返回的为undefined字符串!
+    if(cityName=="undefined"||cityName==null){
       cityName='北京';
     }
+    
     this.props.userInfoActions.update({
       cityName:cityName
     })

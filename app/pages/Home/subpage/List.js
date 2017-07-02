@@ -42,6 +42,7 @@ class List extends React.Component {
         this.resultHandle(result)
         
     }
+    // 处理数据函数
     resultHandle(result){
         result.then(res => {
             return res.json()
@@ -49,9 +50,10 @@ class List extends React.Component {
             // 处理获取的数据
             const data = json.data
             const hasMore = json.hasMore
+            // 获取数据后设置
             if (data.length) {
                 this.setState({
-                    data: data,
+                    data: this.state.data.concat(data),
                     hasMore: hasMore,
                 })
             }
@@ -63,7 +65,6 @@ class List extends React.Component {
         })
     }
     loadMoreData(){
-        console.log("加载了更多")
          // 记录状态
         this.setState({
             isLoadingMore: true

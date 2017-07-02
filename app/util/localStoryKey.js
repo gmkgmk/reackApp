@@ -1,3 +1,4 @@
+// try catch是为了兼容Ios下safar兼容
 let local = {
   getItem(key) {
     let value;
@@ -12,6 +13,7 @@ let local = {
     }
   },
   setItem(key,value){
+    console.log(key,value)
     try{
       localStorage.setItem(key, value)
     }catch(err){

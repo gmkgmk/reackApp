@@ -1,42 +1,20 @@
-@pageName:Home;
-@header-left:80px;
-@header-right:40px;
-#@{pageName}_header{
+#common-header {
     background-color: rgb(233, 32, 61);
-    padding: 14px;
     color: #fff;
-    font-size: 20px;
-    line-height: 1.2;
-  .@{pageName}_header_left {
-    width: @header-left;
-    text-align: left;
-    margin: 5px 0;
-    }
-    .@{pageName}_header_middle { 
-        width: auto;
-        margin: 0 @header-right 0 @header-left;
-    }
-    .search_container {
-          background-color: #fff;
-          border-radius: 40px;
-          overflow: hidden;
-          padding:8px 5px 5px;
+    padding: 15px 10px;
+    text-align: center;
+    position: relative;
 
-          i {
-              color: #ccc !important;
-              margin: 5px;
-          }
-          input {
-              font-size: 16px !important;
-              font-weight: normal;
-              border: 0;
-              padding: 5px;
-          }
-      }
-    .@{pageName}_header_right {
-        font-size: 20px;
-        width: @header-right;
-        margin: 8px 0;
-        text-align: center;
+    h1 {
+        display: inline;
+        font-size: 16px;
+        line-height: 1;
+    }
+    
+    .back-icon {
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        left: 10px;
     }
 }

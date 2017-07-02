@@ -1,38 +1,18 @@
-#Home_header {
+#common-header {
   background-color: #e9203d;
-  padding: 14px;
   color: #fff;
-  font-size: 20px;
-  line-height: 1.2;
-}
-#Home_header .Home_header_left {
-  width: 80px;
-  text-align: left;
-  margin: 5px 0;
-}
-#Home_header .Home_header_middle {
-  width: auto;
-  margin: 0 40px 0 80px;
-}
-#Home_header .search_container {
-  background-color: #fff;
-  border-radius: 40px;
-  overflow: hidden;
-  padding: 8px 5px 5px;
-}
-#Home_header .search_container i {
-  color: #ccc !important;
-  margin: 5px;
-}
-#Home_header .search_container input {
-  font-size: 16px !important;
-  font-weight: normal;
-  border: 0;
-  padding: 5px;
-}
-#Home_header .Home_header_right {
-  font-size: 20px;
-  width: 40px;
-  margin: 8px 0;
+  padding: 15px 10px;
   text-align: center;
+  position: relative;
+}
+#common-header h1 {
+  display: inline;
+  font-size: 16px;
+  line-height: 1;
+}
+#common-header .back-icon {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 10px;
 }
