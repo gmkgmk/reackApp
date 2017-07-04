@@ -1,0 +1,131 @@
+#home-category {
+  background-color: #fff;
+  padding: 10px;
+}
+#home-category .carousel-item ul {
+  width: 100%;
+  height: auto;
+}
+#home-category .carousel-item li {
+  display: block;
+  list-style: none;
+  width: 20%;
+  background-repeat: no-repeat;
+  background-size: 36px auto;
+  background-position: top center;
+  text-align: center;
+  padding-top: 50px;
+  color: #666;
+  font-size: 14px;
+  margin-top: 16px;
+}
+#home-category .carousel-item li.meishi {
+  background-image: url(/static/images/icon-meishi.png);
+}
+#home-category .carousel-item li.maoyan {
+  background-image: url(/static/images/icon-maoyan.png);
+}
+#home-category .carousel-item li.jiudian {
+  background-image: url(/static/images/icon-jiudian.png);
+}
+#home-category .carousel-item li.xuixianyule {
+  background-image: url(/static/images/icon-xiuxianyule.png);
+}
+#home-category .carousel-item li.waimai {
+  background-image: url(/static/images/icon-waimai.png);
+}
+#home-category .carousel-item li.huoguo {
+  background-image: url(/static/images/icon-huoguo.png);
+}
+#home-category .carousel-item li.liren {
+  background-image: url(/static/images/icon-liren.png);
+}
+#home-category .carousel-item li.zhoubianyou {
+  background-image: url(/static/images/icon-zhoubianyou.png);
+}
+#home-category .carousel-item li.jiehun {
+  background-image: url(/static/images/icon-jiehun.png);
+}
+#home-category .carousel-item li.ktv {
+  background-image: url(/static/images/icon-ktv.png);
+}
+#home-category .carousel-item li.shenghuofuwu {
+  background-image: url(/static/images/icon-shenghuofuwu.png);
+}
+#home-category .carousel-item li.jingdian {
+  background-image: url(/static/images/icon-jingdian.png);
+}
+#home-category .carousel-item li.jianshenyundong {
+  background-image: url(/static/images/icon-jianshenyundong.png);
+}
+#home-category .carousel-item li.gouwu {
+  background-image: url(/static/images/icon-gouwu.png);
+}
+#home-category .carousel-item li.aiche {
+  background-image: url(/static/images/icon-aiche.png);
+}
+#home-category .carousel-item li.qinzi {
+  background-image: url(/static/images/icon-qinzi.png);
+}
+#home-category .carousel-item li.jiazhuang {
+  background-image: url(/static/images/icon-jiazhuang.png);
+}
+#home-category .carousel-item li.xuexipeixun {
+  background-image: url(/static/images/icon-xuexipeixun.png);
+}
+#home-category .carousel-item li.yiliaojiankang {
+  background-image: url(/static/images/icon-yiliaojiankang.png);
+}
+#home-category .carousel-item li.daojia {
+  background-image: url(/static/images/icon-daojia.png);
+}
+#home-category .carousel-item li.zizhucan {
+  background-image: url(/static/images/icon-zizhucan.png);
+}
+#home-category .carousel-item li.ribenliaoli {
+  background-image: url(/static/images/icon-ribenliaoli.png);
+}
+#home-category .carousel-item li.meifa {
+  background-image: url(/static/images/icon-meifa.png);
+}
+#home-category .carousel-item li.meijiameijie {
+  background-image: url(/static/images/icon-meijiameijie.png);
+}
+#home-category .carousel-item li.spa {
+  background-image: url(/static/images/icon-spa.png);
+}
+#home-category .carousel-item li.shoushenxianti {
+  background-image: url(/static/images/icon-shoushenxianti.png);
+}
+#home-category .carousel-item li.qinzisheying {
+  background-image: url(/static/images/icon-qinzisheying.png);
+}
+#home-category .carousel-item li.qinziyoule {
+  background-image: url(/static/images/icon-qinziyoule.png);
+}
+#home-category .carousel-item li.youerjiaoyu {
+  background-image: url(/static/images/icon-youerjiaoyu.png);
+}
+#home-category .carousel-item li.more {
+  background-image: url(/static/images/icon-more.png);
+}
+#home-category .index-container {
+  margin-top: 10px;
+}
+#home-category .index-container ul {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+#home-category .index-container li {
+  list-style: none;
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin: 0 3px;
+}
+#home-category .index-container li.active {
+  background-color: #e9203d;
+}
