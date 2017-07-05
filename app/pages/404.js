@@ -6,11 +6,10 @@ class NotFound extends Component{
     super(props,context);
     this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this);
   }
-  render(){
+  render() {
     return(
-      <h1>404 not found page</h1>
+      <h1>page not found</h1>
     )
   }
 }
-
 export default  NotFound;

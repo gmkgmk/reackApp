@@ -1,0 +1,77 @@
+#login-container {
+  width: 100%;
+  margin: 20px auto 0 auto;
+}
+#login-container .input-container {
+  background-color: #fff;
+  border: 1px solid #fff;
+  padding: 5px 10px;
+  overflow: hidden;
+  margin-top: 1px;
+}
+#login-container .input-container input {
+  font-size: 16px;
+  display: block;
+}
+#login-container .input-container i {
+  color: #e9203d;
+  width: 16px;
+  float: left;
+  margin-top: 3px;
+}
+#login-container .phone-container input {
+  border: none;
+  height: 24px;
+  line-height: 24px;
+  padding: 10px 0 10px 10px;
+  font-size: 15px;
+  outline: 0;
+  color: #333;
+  margin: 0 20px;
+  width: 80%;
+}
+#login-container .password-container input {
+  margin-left: 20px;
+  margin-right: 120px;
+  border: none;
+  height: 24px;
+  line-height: 24px;
+  padding: 10px 0 10px 10px;
+  font-size: 15px;
+  outline: 0;
+  color: #333;
+}
+#login-container .password-container button {
+  width: 100px;
+  height: 100%;
+  font-size: 16px;
+  color: #e9203d;
+  border: 0;
+  background-color: #fff;
+  text-align: center;
+  float: right;
+  padding: 0;
+  outline: 0;
+}
+#login-container .btn-login {
+  width: 95%;
+  outline: 0;
+  border: 0;
+  line-height: 40px;
+  color: #fff;
+  text-decoration: none;
+  background: #f63;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  font-size: 14px;
+  letter-spacing: 6px;
+  display: block;
+  margin: auto;
+}
+#login-container .form-info {
+  color: #999;
+  font-size: 12px;
+  line-height: 12px;
+  margin-top: 5px;
+  text-align: center;
+}

@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { Component } from 'react';
 import PureRenderMixin from 'react-addons-pure-render-mixin'
+import { Link } from 'react-router'
 
 import './style.less'
 
-class ListItem extends React.Component {
+class ListItem extends  Component{
     constructor(props, context) {
         super(props, context);
         this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this);
@@ -12,6 +13,7 @@ class ListItem extends React.Component {
         const data = this.props.data
         return (
             <div className="list-item clearfix">
+              <Link to={'/detail/' + data.id}>
                 <div className="item-img-container floatLeft">
                     <img src={data.img} alt={data.title}/>
                 </div>
@@ -28,6 +30,7 @@ class ListItem extends React.Component {
                         <span className="mumber floatRight">已售{data.mumber}</span>
                     </div>
                 </div>
+              </Link>  
             </div>
         )
     }

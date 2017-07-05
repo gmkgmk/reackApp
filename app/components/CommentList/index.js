@@ -10,7 +10,6 @@ class CommentList extends Component{
   }
   render() {
         const data = this.props.data;
-        console.log(data)
         const ComponentData=data.map((item, index) => {
                     return <Item key={index} data={item}/>
                 })

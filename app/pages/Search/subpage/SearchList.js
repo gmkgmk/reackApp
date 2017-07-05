@@ -67,7 +67,6 @@ const initialState = {
         const cityName = this.props.userinfo.cityName;
         const keyword = this.props.keyWord || '';
         const type = this.props.type;
-        console.log(cityName, 0,type, keyword)
         const result = getSearchData(cityName, 0,type, keyword)
         this.resultHandle(result)
     }

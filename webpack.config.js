@@ -5,7 +5,6 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var OpenBrowserPlugin = require('open-browser-webpack-plugin');
 const port = 8088;
 module.exports = {
-  
   /*
      enter:入口文件的配置;
     */
@@ -66,6 +65,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: __dirname + '/app/index.tmpl.html',
       inject: true,
+      favicon: __dirname + '/app/static/favicon.ico',
     }),
 
     new webpack.HotModuleReplacementPlugin(), //热加载插件
@@ -80,7 +80,7 @@ module.exports = {
   ],
 
   devServer: {
-    port: port,  
+    port: port,
     proxy: {
       // 凡是 `/api` 开头的 http 请求，都会被代理到 localhost:3000 上，由 koa 提供 mock 数据。
       // koa 代码在 ./mock 目录中，启动命令为 npm run mock

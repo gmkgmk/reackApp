@@ -11,12 +11,12 @@
   list-style: none;
   width: 20%;
   background-repeat: no-repeat;
-  background-size: 44px auto;
+  background-size: 36px auto;
   background-position: top center;
   text-align: center;
-  padding-top: 60px;
+  padding-top: 50px;
   color: #666;
-  font-size: 18px;
+  font-size: 14px;
   margin-top: 16px;
 }
 #home-category .carousel-item li.meishi {

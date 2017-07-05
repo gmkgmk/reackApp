@@ -15,7 +15,7 @@ class Categore extends Component{
   }
   render(){
     const opt={
-      auto:2000,
+      auto:4000,
       callback:(index)=>{
         this.setState({index:index})
       }

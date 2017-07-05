@@ -10,7 +10,6 @@ export default class Search extends Component{
   }
   render(){
     const params=this.props.params;
-    console.log(params)
     return(
      <section>
         <SearchHeader keyWord={params.keyword}/>

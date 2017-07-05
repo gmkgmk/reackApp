@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import { Router, Route, IndexRoute } from 'react-router'
 
-import App from '../pages'
-import Home from '../pages/Home'
-import City from '../pages/City'
-import User from '../pages/User'
-import Search from '../pages/Search'
-import Detail from '../pages/Detail'
-import NotFound from '../pages/404'
+import App from '../pages';
+import Home from '../pages/Home';
+import City from '../pages/City';
+import User from '../pages/User';
+import Search from '../pages/Search';
+import Detail from '../pages/Detail';
+import Login from '../pages/Login';
+import NotFound from '../pages/404';
 
 
 class RouterMap extends Component {
@@ -20,6 +21,7 @@ class RouterMap extends Component {
                     <Route path='/User' component={User}/>
                     <Route path='/search/:type(/:keyword)' component={Search}/>
                     <Route path='/detail/:id' component={Detail}/>
+                    <Route path='/login(/:router)' component={Login}/>
                     <Route path='*' component={NotFound}/>
                 </Route>
             </Router>

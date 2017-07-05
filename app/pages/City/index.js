@@ -6,9 +6,7 @@ import LocalStore from '../../util/localStoryKey';
 import {CITYNAME} from '../../config/localStoreKey';
 import { hashHistory } from 'react-router'
 
-
-import * as userInfoActionsFromOther from '../..//actions/userInfo'
-
+import * as userInfoActionsFromOther from '../../actions/userInfo'
 import Header from "../../components/Header";
 import ChooseCityName from "../../components/chooseCityName";
 import CityList from "../../components/cityList";
