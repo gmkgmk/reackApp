@@ -6,7 +6,7 @@
   "scripts": {
     "start": "set NODE_ENV=dev && webpack-dev-server --progress --colors",
     "mock": "node --harmony ./service/server.js",
-    "build": "rd/s/q build && set NODE_ENV=production webpack --config && ./webpack.production.config.js --progress --colors"
+    "build":"rd/s/q build && set NODE_ENV=production &&  webpack -p --config   webpack.production.config.js --progress --colors "
   },
   "author": "",
   "license": "ISC",

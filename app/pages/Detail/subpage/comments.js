@@ -72,7 +72,7 @@ class Comments extends Component{
     const id = this.props.id
     const page = this.state.page
     const result = getCommentData(page, id)
-    this.resultHandle(result)
+    this.resultFn(result)
 
     // 增加 page 技术
     this.setState({

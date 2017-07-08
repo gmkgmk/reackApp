@@ -20,7 +20,7 @@ class User extends Component {
     const userinfo = this.props.userinfo
     return ( 
       <section>
-        <Header title="用户主页" backRouter="/home"/>
+        <Header title="用户主页" backRouter="/"/>
         <UserInfo username={userinfo.username} city={userinfo.cityName}/>
         <OrderList username={userinfo.username}/>
       </section>
@@ -32,7 +32,7 @@ class User extends Component {
   testLogin() {
      // 如果未登录，跳转到登录页面
     if (!this.props.userinfo.username) {
-      hashHistory.push('/Login')
+       hashHistory.push('/Login')
     }
   }
 }

@@ -15,22 +15,19 @@ class OrderList extends Component{
     }
   }
   render() {
+    console.log("this stat data length",this.state.data.length)
     return(
       <article className={`order-list-container`}>
         <h2>您的订单</h2>
-        {
-        this.state.data.length
-        ? <OrderListComponent data={this.state.data} submitFn={this.submitFn.bind(this)}/>
-        : <div>{/* loading */}</div>
-        }
+        <OrderListComponent data={this.state.data} submitFn={this.submitFn.bind(this)}/>
       </article>
     )
   };
   componentDidMount(){
     const username = this.props.username;
-      this.loadOrder(username);
-    if(username){
-    }
+      if(username){
+        this.loadOrder(username);
+      }
   };
   // 获取订单列表数据
   loadOrder(username){

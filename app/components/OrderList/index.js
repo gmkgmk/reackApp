@@ -12,7 +12,7 @@ class OrderList extends Component{
       const data = this.props.data;
       const submitFn = this.props.submitFn;
       const items = data.map((item, index) => {
-          return <Item key={index} data={item} submitFn={submitFn}/>
+          return <Item key={index} data={item}/>
         })
       return (
         <div>

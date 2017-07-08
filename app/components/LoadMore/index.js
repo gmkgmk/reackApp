@@ -32,7 +32,7 @@ export default class LoadMore extends Component{
         // 获取一个元素的位置,可读不可写getBoundingClientRect()
         const top = wrapper.getBoundingClientRect().top;
         const windowHeight = window.screen.height;
-        if (top && top > windowHeight) {
+        if (top && top < windowHeight) {
             // 证明 wrapper 已经被滚动到暴露在页面可视范围之内了
             loadMoreFn()
         }
