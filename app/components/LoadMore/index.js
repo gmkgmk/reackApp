@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PureRenderMixin from 'react-addons-pure-render-mixin';
 import './style.css'
+import Welcome from '../../pages/welcome'
 export default class LoadMore extends Component{
   constructor(props,context){
     super(props,context);
@@ -11,7 +12,7 @@ export default class LoadMore extends Component{
       <div className="load-more" ref="wrapper">
       {
         this.props.isLoadingMore
-        ? <span>加载中...</span>
+        ? <Welcome/> 
         : <span onClick={this.loadMoreHandle.bind(this)}>加载更多</span>
       }
       </div>

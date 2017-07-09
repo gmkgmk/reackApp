@@ -6,23 +6,39 @@ import HomeHeader from '../../components/HomeHeader';
 import Categore from '../../components/Categore';
 import AD from './subpage/Ad';
 import List from './subpage/List';
-
+import Welcome from "../welcome";
 
 class Home extends Component{
   constructor(props,context){
     super(props,context);
     this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate;
+    this.state = {
+      isRender: false,
+    }
   }
-  render(){
+  render() {
+    const isRender = this.state.isRender;
     return(
      <main>
-        <HomeHeader cityName={this.props.userinfo.cityName}/>
+        <HomeHeader cityName={this.props.userinfo.cityName} />
         <Categore/>
-        <AD />
-        <List cityName={this.props.userinfo.cityName}/>
+        
+        {isRender ?
+          (<section><AD />
+            <List cityName={this.props.userinfo.cityName} />
+            </section>)
+          : (<Welcome />)}
      </main>
     )
-  }
+  };
+  componentDidMount() {
+    // 没有数据则模拟
+      setTimeout(function () {
+        this.setState({
+          isRender: true
+        })
+      }.bind(this),500)
+    }
 }
 
 

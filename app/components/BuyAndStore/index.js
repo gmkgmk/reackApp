@@ -19,7 +19,7 @@ class BuyAndStore extends Component{
       }
       </div>
         <div className={`item-container floatRight`}>
-            <button onClick={this.buyClickFn.bind(this)}>购买</button>
+            <button onClick={this.buyClickFn.bind(this)} className="buyBtn">购买</button>
         </div>
     </div>
     )

@@ -12,7 +12,7 @@ import LoadMore from '../../../components/LoadMore';
 import {
   getSearchData
 } from '../../../fetch/search/search';
-
+import Welcome from '../../welcome'
 
 const initialState = {
   data: [],
@@ -34,12 +34,12 @@ const initialState = {
             {
                 this.state.data.length
                 ? <ListCompoent data={this.state.data}/>
-                : <div>{ `加载中... `}</div>
+                : <Welcome/>
             }
             {
                 this.state.hasMore
                 ? <LoadMore isLoadingMore={this.state.isLoadingMore} loadMoreFn={this.loadMoreData.bind(this)}/>
-                : ''
+                : <p></p>
             }
             </section>
         )

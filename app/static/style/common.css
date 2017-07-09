@@ -65,4 +65,12 @@ input {
   background-color: #fff;
   padding: 7px 6px 10px;
   position: relative;
+  margin-top: 15px;
+}
+.welcome {
+  background: #fff;
+}
+.welcome img {
+  margin: auto;
+  display: block;
 }

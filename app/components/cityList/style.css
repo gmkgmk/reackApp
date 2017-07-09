@@ -3,7 +3,14 @@
   padding: 10px 15px 20px 15px;
 }
 .city-list-container h3 {
-  font-size: 16px;
+  padding-left: 10px;
+  font-size: 14px;
+  color: #323232;
+  line-height: 30px;
+  background-color: #f2f2f2;
+  border-bottom: 1px solid #e2e2e2;
+  font-weight: 700;
+  display: block;
 }
 .city-list-container ul {
   display: block;
@@ -14,7 +21,12 @@
   display: block;
   float: left;
   width: 33.3%;
+  display: inline-block;
+  line-height: 48px;
+  border-bottom: 1px solid #ededed;
+  border-right: 1px solid #ededed;
   text-align: center;
+  color: #323232;
 }
 .city-list-container li span {
   display: inline-block;

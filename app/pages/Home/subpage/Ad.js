@@ -13,13 +13,13 @@ class Ad extends React.Component {
     }
     render() {
         return (
-            <div>
+            <section>
             {
                 this.state.data.length
                 ? <HomeAd data={this.state.data}/>
                 : <div>{ `加载中... `}</div>
             }
-            </div>
+            </section>
         )
     }
     componentDidMount() {

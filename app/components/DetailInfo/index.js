@@ -17,21 +17,25 @@ class DetailInfo extends Component{
         return (
             <div id="detail-info-container">
                 <div className="info-container clearfix">
-                    <div className="info-img-container floatLeft">
+                    <figure className="info-img-container">
                         <img src={data.img}/>
-                    </div>
-                    <div className="info-content">
-                        <h1>{data.title}</h1>
-                        <div className="star-container">
-                            {/* 引用 Star 组件 */}
-                            <Star star={data.star}/>
+                    </figure>
+                        <div className="title-content">
                             <span className="price">￥{data.price}</span>
+                            <p className="sub-title floatRight">{data.subTitle}</p>
                         </div>
-                        <p className="sub-title">{data.subTitle}</p>
-                    </div>
+                        <aside className="info-content clearfix">
+                            <div className=" floatLeft">
+                                <h3>{data.title}</h3>
+                                {/* 引用 Star 组件 */}
+                                <Star star={data.star} />
+                            </div>
+                        {/* 设置 innerHTML dangerouslySetInnerHTML会把标签自动识别*/}
+                        <p dangerouslySetInnerHTML={{__html: data.desc}} className="info-desc floatRight"></p>
+                    </aside>
                 </div>
-                {/* 设置 innerHTML dangerouslySetInnerHTML会把标签自动识别*/}
-                <p dangerouslySetInnerHTML={{__html: data.desc}} className="info-desc"></p>
+                
+             
             </div>
         )
     }

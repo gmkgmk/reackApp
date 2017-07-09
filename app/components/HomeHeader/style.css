@@ -1,17 +1,17 @@
 #Home_header {
-  background-color: #e9203d;
+  background-color: #f63;
   padding: 10px;
   color: #fff;
   font-size: 16px;
   line-height: 1;
 }
+#Home_header a {
+  color: #fff;
+}
 #Home_header .Home_header_left {
   width: 60px;
   text-align: left;
   margin: 5px 0;
-}
-#Home_header .Home_header_left a {
-  color: #fff;
 }
 #Home_header .Home_header_middle {
   width: auto;

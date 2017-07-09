@@ -18,7 +18,7 @@ class Login extends Component{
   render(){
     return (
      <section>
-       <Header title="登陆" />
+       <Header title="用户登陆" />
        {
          this.state.checking
         ?(<h1>等待中</h1>):

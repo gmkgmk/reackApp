@@ -21,7 +21,9 @@ class Header extends Component{
           </Link>
        </div>
        <div className={`floatRight ${pageName}_header_right`}>
-          <i className="icon-user"></i>
+          <Link to="/User">   
+            <i className="icon-user"></i>
+          </Link>
        </div>
        <div className={`${pageName}_header_middle`}>
         <div  className={`search_container`}>

@@ -5,7 +5,7 @@ import { getCommentData } from '../../../fetch/detail/detai'
 
 import LoadMore from '../../../components/LoadMore'
 import ListComponent from '../../../components/CommentList'
-
+import Welcome from '../../welcome'
 import './style.less'
 
 class Comments extends Component{
@@ -26,7 +26,7 @@ class Comments extends Component{
             {
                 this.state.data.length
               ?<ListComponent data={this.state.data}/>
-              :<p>加载中</p>
+              :<Welcome/>
             }
             {
                 this.state.hasMore

@@ -23,7 +23,7 @@ class SearchHeader extends Component{
      </header>
     )
   }
-  clickBack(){
+  clickBack() {
     window.history.back()
   }
   enterFn(value){

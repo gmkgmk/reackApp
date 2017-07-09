@@ -9,7 +9,7 @@ class CityList extends Component{
   render(){
     return(
      <section className={`city-list-container`}>
-        <h1>城市列表</h1>
+        <h3>热门城市</h3>
         <ul className="clearfix">
           <li>
               <span onClick={this.getCityName.bind(this, '北京')}>北京</span>
@@ -52,7 +52,6 @@ class CityList extends Component{
     )
   }
   getCityName(newCity){
-    console.log(newCity)
     let changeFn = this.props.changeCityFn;
     changeFn(newCity)
   }

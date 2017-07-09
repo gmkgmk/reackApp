@@ -18,7 +18,11 @@ class List extends React.Component {
     render() {
         return (
             <section>
-            
+            <div className={`index_sale_header clearfix`}>
+                <span className={`title_left floatLeft`}>猜你喜欢</span>
+                <span className="more">更多优惠</span>
+                <i className="arrowent"></i>
+            </div>
             {
                 this.state.data.length
                 ? <HomeList data={this.state.data}/>

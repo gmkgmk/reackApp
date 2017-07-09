@@ -1,41 +1,48 @@
 #detail-info-container {
     background-color: #fff;
-    padding: 10px;
-
     .info-container {
         border-bottom: 1px solid #f1f1f1;
         padding-bottom: 10px;
-        margin-bottom: 10px;
     }
-
     .info-img-container {
-        width: 130px;
-
+        width: 100%;
+        margin: 0;
         img {
             width: 100%;
         }
     }
+    .title-content {
+        padding: 5px;
+        p {
+            line-height: 30px;
+        }
+    }
     .info-content {
-        margin-left: 140px;
-
-        h1 {
-            font-size: 20px;
-            color: #333;
+        padding: 20px;
+        h3 {
+            color: #878787;
+            text-decoration: none;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            margin: 0;
         }
         .star-container {
-            margin: 5px 0;
-
-            .price {
-                margin-left: 20px;
-                color: #999;
-            }
+            margin: 10px 0;
         }
-        .sub-title {
-            color: #999;
-        }
+    }
+    .sub-title {
+        color: #999;
+    }
+    .price {
+        margin-left: 20px;
+        color: #f63;
+        font-size: 30px;
+        margin-right: 3px;
     }
     .info-desc {
         color: #999;
         line-height: 1.5;
+    }
+    p {
+        margin: 0
     }
 }
