@@ -8,5 +8,5 @@ export function post(url,obj) {
       method: 'POST',
       body:JSON.stringify(obj)
     };
-   return fetch(Url,defaultOptions)
+   return fetch(url,defaultOptions)
 }
