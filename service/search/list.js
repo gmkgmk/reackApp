@@ -2,7 +2,7 @@ module.exports = {
     hasMore: true,
     data: [
         {
-            img: 'http://images2015.cnblogs.com/blog/138012/201610/138012-20161022145742279-606202974.jpg',
+            img: '/static/images/list/search_1.jpg',
             title: '河束人家',
             subTitle: '南锣鼓巷店',
             price: '150',
@@ -10,7 +10,7 @@ module.exports = {
             mumber: '389'
         },
         {
-            img: 'http://images2015.cnblogs.com/blog/138012/201610/138012-20161022145750123-1745839503.jpg',
+            img: '/static/images/list/search_2.jpg',
             title: '漫漫火锅',
             subTitle: '[王府井]自助火锅',
             price: '113',
@@ -18,7 +18,7 @@ module.exports = {
             mumber: '689'
         },
         {
-            img: 'http://images2015.cnblogs.com/blog/138012/201610/138012-20161022145755545-1770557408.jpg',
+            img: '/static/images/list/search_3.jpg',
             title: '北方涮肉',
             subTitle: '什刹海店',
             price: '92',
@@ -26,7 +26,7 @@ module.exports = {
             mumber: '106'
         },
         {
-            img: 'http://images2015.cnblogs.com/blog/138012/201610/138012-20161022145800732-576947550.jpg',
+            img: '/static/images/list/search_4.jpg',
             title: '姓高火锅',
             subTitle: '知春里店',
             price: '90',
@@ -34,7 +34,7 @@ module.exports = {
             mumber: '58'
         },
         {
-            img: 'http://images2015.cnblogs.com/blog/138012/201610/138012-20161022145806201-1193851669.jpg',
+            img: '/static/images/list/search_5.jpg',
             title: '八重牛府',
             subTitle: '最好吃的牛丸',
             price: '85',
@@ -42,7 +42,7 @@ module.exports = {
             mumber: '1426'
         },
         {
-            img: 'http://images2015.cnblogs.com/blog/138012/201610/138012-20161022150855185-1659375763.jpg',
+            img: '/static/images/list/search_6.jpg',
             title: '蜀乡涮锅',
             subTitle: '[王府井]自助火锅',
             price: '113',
@@ -50,7 +50,7 @@ module.exports = {
             mumber: '689'
         },
         {
-            img: 'http://images2015.cnblogs.com/blog/138012/201610/138012-20161022145800732-576947550.jpg',
+            img: '/static/images/list/search_7.jpg',
             title: '满楼福火锅',
             subTitle: '知春路店',
             price: '90',

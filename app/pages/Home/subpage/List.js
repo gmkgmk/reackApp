@@ -18,7 +18,7 @@ class List extends React.Component {
     render() {
         return (
             <section>
-            <h2 className={`home-list-title `}>猜你喜欢</h2>
+            
             {
                 this.state.data.length
                 ? <HomeList data={this.state.data}/>

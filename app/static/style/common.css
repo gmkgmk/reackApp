@@ -42,3 +42,27 @@ input {
   color: #666;
   margin: 10px 15px;
 }
+.more {
+  font-size: 12px;
+  float: right;
+  padding-right: 18px;
+  color: #bbb;
+}
+.arrowent {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  margin-top: -8px;
+  border: 2px solid #bbb;
+  transform: rotate(45deg);
+  width: 8px;
+  height: 8px;
+  border-bottom: none;
+  border-left: none;
+  -webkit-transform: rotate(45deg);
+}
+.index_sale_header {
+  background-color: #fff;
+  padding: 7px 6px 10px;
+  position: relative;
+}

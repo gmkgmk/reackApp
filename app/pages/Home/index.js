@@ -18,7 +18,7 @@ class Home extends Component{
      <main>
         <HomeHeader cityName={this.props.userinfo.cityName}/>
         <Categore/>
-        <AD/>
+        <AD />
         <List cityName={this.props.userinfo.cityName}/>
      </main>
     )

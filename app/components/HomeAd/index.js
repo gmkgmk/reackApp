@@ -8,8 +8,12 @@ class HomeAd extends Component{
   }
   render(){
     return(
-      <div id="home-ad">
-          <h2 className={`home-list-title`}>超值特惠</h2>
+      <section id="home-ad">
+            <div className={`index_sale_header clearfix`}>
+                <span className={`title_left floatLeft`}>超值特惠</span>
+                <span className="more">更多优惠</span>
+                <i className="arrowent"></i>
+            </div>
           <div className="ad-container clearfix">
               {this.props.data.map((item, index) => {
                   return <div key={index} className="ad-item floatLeft">
@@ -19,7 +23,7 @@ class HomeAd extends Component{
                   </div>
               })}
           </div>
-      </div>
+      </section>
     )
   }
 }

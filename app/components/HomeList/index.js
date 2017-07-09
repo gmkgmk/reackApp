@@ -10,11 +10,16 @@ class HomeList extends Component{
   }
   render(){
     return(
-          <div className="list-container">
+      <section className="list-container">
+         <div className={`index_sale_header clearfix`}>
+                <span className={`title_left floatLeft`}>猜你喜欢</span>
+                <span className="more">更多优惠</span>
+                <i className="arrowent"></i>
+            </div>
                 {this.props.data.map((item, index) => {
                     return <Item key={index} data={item}/>
                 })}
-            </div>
+            </section>
     )
   }
 }
