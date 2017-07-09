@@ -3,7 +3,6 @@ import * as actionTypes from '../constants/store'
 const initialState = []
 
 export default function userinfo(state = initialState, action) {
-    console.log("执行了store函数")
     switch (action.type) {
         case actionTypes.STORE_UPDATE:
             return action.data

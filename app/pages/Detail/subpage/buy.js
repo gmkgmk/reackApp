@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import PureRenderMixin from 'react-addons-pure-render-mixin';
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
-import { hashHistory } from 'react-router'
+import createBrowserHistory from 'history/createBrowserHistory';
+const history = createBrowserHistory();
 
 import * as storeActionsFromOther from '../../../actions/store'
 
@@ -47,7 +48,7 @@ class Buy extends Component{
     const userinfo = this.props.userinfo
     if (!userinfo.username) {
         // 跳转到登录页面的时候，要传入目标router，以便登录完了可以自己跳转回来
-        hashHistory.push('/Login/' + encodeURIComponent('/detail/' + id))
+        history.push('/Login/detail/',{ id: id})
         return false
     }
     return true
@@ -59,7 +60,7 @@ class Buy extends Component{
     };
     alert("购买成功");
     // 跳转到用户主页
-    hashHistory.push('/User')
+    history.push('/User')
   }
   goStore() {
     const loginFlag = this.testLogin()

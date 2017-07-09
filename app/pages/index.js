@@ -4,8 +4,9 @@ import LocalStore from '../util/localStoryKey';
 import {CITYNAME} from '../config/localStoreKey';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
-import * as userInfoActionsFromOther from '../actions/userInfo'
-import '../static/style/common.less'
+import * as userInfoActionsFromOther from '../actions/userInfo';
+import Welcome from '../pages/404';
+import '../static/style/common.less';
 
 
  class App extends Component {
@@ -16,25 +17,24 @@ import '../static/style/common.less'
       initDone:false,
     }
   }
-  render(){
+  render() {
+    console.log(this.props.children.props.children)
     return(
      <div>
         {
-                    this.state.initDone
-                    ? this.props.children
-                    : <div>正在加载...</div>}
+          this.state.initDone
+          ? this.props.children.props.children
+          : <Welcome/>}
      </div>
     )
   }
   componentDidMount(){
     // 从localstoring里面获取城市
     let cityName =LocalStore.getItem(CITYNAME);
-
     //返回的为undefined字符串!
     if(cityName=="undefined"||cityName==null){
       cityName='北京';
     }
-    
     this.props.userInfoActions.update({
       cityName:cityName
     })

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PureRenderMixin from 'react-addons-pure-render-mixin';
-import {Link,hashHistory}  from 'react-router'
+import { Link } from 'react-router-dom';
 import './style.less';
 import SearchInput from "../SearchInput";
 class Header extends Component{
@@ -33,9 +33,9 @@ class Header extends Component{
        </div>
      </header>
     )
-  }
+  };
   enterFn(value){
-    hashHistory.push("/search/all/"+encodeURIComponent(value))
+   // hashHistory.push("/search/all/"+encodeURIComponent(value))
   }
 }
 
