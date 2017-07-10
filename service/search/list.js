@@ -1,13 +1,13 @@
 module.exports = {
     hasMore: true,
-    data: [
-        {
+    data: [{
             img: '/static/images/list/search_1.jpg',
             title: '河束人家',
             subTitle: '南锣鼓巷店',
             price: '150',
             distance: '120m',
-            mumber: '389'
+            mumber: '389',
+            id: Math.random().toString().slice(2)
         },
         {
             img: '/static/images/list/search_2.jpg',
@@ -15,7 +15,8 @@ module.exports = {
             subTitle: '[王府井]自助火锅',
             price: '113',
             distance: '140m',
-            mumber: '689'
+            mumber: '689',
+            id: Math.random().toString().slice(2)
         },
         {
             img: '/static/images/list/search_3.jpg',
@@ -23,7 +24,8 @@ module.exports = {
             subTitle: '什刹海店',
             price: '92',
             distance: '160',
-            mumber: '106'
+            mumber: '106',
+            id: Math.random().toString().slice(2)
         },
         {
             img: '/static/images/list/search_4.jpg',
@@ -31,7 +33,8 @@ module.exports = {
             subTitle: '知春里店',
             price: '90',
             distance: '160',
-            mumber: '58'
+            mumber: '58',
+            id: Math.random().toString().slice(2)
         },
         {
             img: '/static/images/list/search_5.jpg',
@@ -39,7 +42,8 @@ module.exports = {
             subTitle: '最好吃的牛丸',
             price: '85',
             distance: '160',
-            mumber: '1426'
+            mumber: '1426',
+            id: Math.random().toString().slice(2)
         },
         {
             img: '/static/images/list/search_6.jpg',
@@ -47,7 +51,8 @@ module.exports = {
             subTitle: '[王府井]自助火锅',
             price: '113',
             distance: '140m',
-            mumber: '689'
+            mumber: '689',
+            id: Math.random().toString().slice(2)
         },
         {
             img: '/static/images/list/search_7.jpg',
@@ -55,7 +60,8 @@ module.exports = {
             subTitle: '知春路店',
             price: '90',
             distance: '160',
-            mumber: '58'
+            mumber: '58',
+            id: Math.random().toString().slice(2)
         }
     ]
 }

@@ -18,17 +18,17 @@ import '../static/style/common.less';
     }
   }
   render() {
-    console.log(this.props.children.props.children)
     return(
      <div>
         {
           this.state.initDone
-          ? this.props.children.props.children
+          ? this.props.children
           : <Welcome/>}
      </div>
     )
   }
-  componentDidMount(){
+  componentDidMount() {
+    console.log(this.props.children)
     // 从localstoring里面获取城市
     let cityName =LocalStore.getItem(CITYNAME);
     //返回的为undefined字符串!

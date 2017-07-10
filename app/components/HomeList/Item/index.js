@@ -10,7 +10,7 @@ class ListItem extends  Component{
         this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this);
     }
     render() {
-        const data = this.props.data
+        const data = this.props.data;
         return (
             <div className="list-item clearfix">
               <Link to={'/detail/' + data.id}>

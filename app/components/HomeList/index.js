@@ -8,7 +8,8 @@ class HomeList extends Component{
     super(props,context);
     this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate;
   }
-  render(){
+  render() {
+    console.log(this.props)
     return(
       <section className="list-container">
        

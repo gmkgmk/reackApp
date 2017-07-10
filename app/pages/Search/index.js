@@ -12,7 +12,7 @@ export default class Search extends Component{
     this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate;
   }
   render(){
-    const params=this.props.params;
+    const params = this.props.match.params;
     return(
      <section>
         <SearchHeader keyWord={params.keyword} />

@@ -4,8 +4,8 @@ import React, {
 import PureRenderMixin from 'react-addons-pure-render-mixin';;
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { hashHistory } from 'react-router';
-
+import createHashHistory from 'history/createHashHistory';
+const hashHistory = createHashHistory();
 import * as storeActionsFromOther from '../../actions/store';
 import Header from '../../components/Header';
 import UserInfo from '../../components/UserInfo';
@@ -32,7 +32,7 @@ class User extends Component {
   testLogin() {
      // 如果未登录，跳转到登录页面
     if (!this.props.userinfo.username) {
-       hashHistory.push('/Login')
+       hashHistory.push('/login')
     }
   }
 }

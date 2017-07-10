@@ -15,7 +15,6 @@ class OrderList extends Component{
     }
   }
   render() {
-    console.log("this stat data length",this.state.data.length)
     return(
       <article className={`order-list-container`}>
         <h2>您的订单</h2>

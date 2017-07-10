@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import PureRenderMixin from 'react-addons-pure-render-mixin';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import { hashHistory } from 'react-router'
+import createHashHistory from 'history/createHashHistory';
+const hashHistory = createHashHistory();
 import * as userInfoActionsFromOther from '../../actions/userInfo'
 
 import Header from '../../components/Header';
@@ -39,8 +40,9 @@ class Login extends Component{
     userInfo.username = username;
     actions.update(userInfo);
   
-    const params = this.props.params;
+    const params = this.props.match.params;
     const router = params.router;
+    console.log(router)
     // 有路由就去路由的页面,没路由就去用户信息页面
     if (router) {
       hashHistory.push(router);
@@ -52,7 +54,6 @@ class Login extends Component{
   // 判断是否登陆
   testLogin() {
     const userInfo = this.props.userinfo;
-    console.log(userInfo)
     if (userInfo.username) {
       this.goUserPage();
     } else {

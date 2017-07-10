@@ -4,8 +4,8 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import LocalStore from '../../util/localStoryKey';
 import {CITYNAME} from '../../config/localStoreKey';
-import { hashHistory } from 'react-router'
-
+import createHashHistory from 'history/createHashHistory';
+const hashHistory = createHashHistory();
 import * as userInfoActionsFromOther from '../../actions/userInfo'
 import Header from "../../components/Header";
 import ChooseCityName from "../../components/chooseCityName";
@@ -34,7 +34,7 @@ import CityList from "../../components/cityList";
     // localStorage
     LocalStore.setItem(CITYNAME,newCity);
 
-    hashHistory.push('/')
+    hashHistory.push('/index')
   }
 }
 

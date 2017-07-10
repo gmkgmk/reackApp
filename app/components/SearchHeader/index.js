@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PureRenderMixin from 'react-addons-pure-render-mixin';
-import {hashHistory}  from 'react-router'
+import createHashHistory from 'history/createHashHistory';
+const hashHistory = createHashHistory();
 import './style.less';
 import SearchInput from "../SearchInput";
 

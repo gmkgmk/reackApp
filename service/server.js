@@ -40,7 +40,7 @@ router.get('/api/search/:page/:city/:type/:keyword', function* (next) {
 // 搜索结果页 - 搜索结果 - 两个参数
 router.get('/api/search/:page/:city/:type', function* (next) {
     // 参数
-    const params = this.params
+    const params = this.params;
     const paramsPage = params.page
     const paramsCity = params.city
     const paramstype = params.type

@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import PureRenderMixin from 'react-addons-pure-render-mixin';
-import { Link, hashHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './style.less';
+import createHashHistory from 'history/createHashHistory';
+const hashHistory = createHashHistory();
 class Header extends Component{
   constructor(props,context){
     super(props,context);
@@ -20,9 +22,9 @@ class Header extends Component{
   goBack() {
     const backRouter = this.props.backRouter;
     if (backRouter) {
-       // hashHistory.push(backRouter)
+        hashHistory.push(backRouter)
     } else {
-       // window.history.back()
+       window.history.back()
     }
   }
 }

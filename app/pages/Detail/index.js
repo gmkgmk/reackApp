@@ -12,8 +12,8 @@ export default class Detail extends Component{
     this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate;
   }
   render() {
-    console.log(this.props)
-      const id = this.props.match.params.id
+    const id = this.props.match.params.id
+    console.log(id)
     return(
      <section>
        <Header title="商品信息"/>
